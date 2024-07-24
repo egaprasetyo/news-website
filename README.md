@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a News Web Application that fetches and displays the latest headlines using the [News API](https://newsapi.org/). The application is built with React, utilizing modern frontend technologies to create a dynamic and responsive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display List of News: The application fetches and displays a list of the latest news headlines from the BBC News source.
+- User Search: Users can search for specific news articles using keywords, enhancing the ability to find relevant content quickly.
+- Reading History: The application keeps track of the articles that users have clicked on or read, allowing them to view their reading history for easy reference.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- TypeScript: For type-checking and enhancing code quality.
+- News API: An API used to fetch the latest news headlines
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js (version 21 or later)
+- npm (version 10 or later)
+
+### Installation
+
+1 . Clone the repository:
+
+```sh
+git clone https://github.com/egaprasetyo/news-website.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2 . Navigate to the project directory:
+
+```sh
+cd news-website
+```
+
+3 . Install dependencies:
+
+```sh
+npm install
+```
+
+### Running The Project
+
+Start the development server
+
+```sh
+npm run dev
+```
+
+Open http://localhost:5173 with your browser to see the result.
